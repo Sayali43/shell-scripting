@@ -23,3 +23,8 @@ echo -e "\e[31m I am printing Green Colour \e[0m"
 echo -e "\e[33m I am printing Green Colour \e[0m"
 echo -e "\e[35m I am printing Green Colour \e[0m"
 echo -e "\e[34m I am printing Green Colour \e[0m"
+
+###how to add bk ground colour
+
+#echo -e "\e[43:31m i am prininting text with BC \e[0m"
+echo -e "\e[43:31m i am prininting text with BC \e[0m"
