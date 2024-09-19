@@ -6,5 +6,7 @@
 #echo -e "Total opened sessions are $NO_OF_SESSIONS"
 
 DATE="$(date +%F)"
-NO_OF_SESSIONS ="Who | wc -l
-"
+NO_OF_SESSIONS ="Who | wc -l"
+echo - e "Todays DATE is $(DATE)
+
+echo -e "Total opened sessions are $NO_OF_SESSIONS"
