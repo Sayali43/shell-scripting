@@ -2,9 +2,9 @@
 
 # This script creates EC2 Instaces & the associated DNS Records for the created servers
 
-AMI_ID="ami-072983368f2a6eab5"
-SGID="sg-03b4d0f3339fdc89c"               # Create your own Security Group that allows allows all and then add your SGID 
-HOSTEDZONE_ID="Z08185973US3IG8LL97B8"     # User your private zone id
+AMI_ID="ami-029258aad141cba01"
+SGID="sg-0ca20d446f23fdd9f"               # Create your own Security Group that allows allows all and then add your SGID 
+HOSTEDZONE_ID="Z085783623DWXDG27CQ0U"     # User your private zone id
 COMPONENT=$1
 ENV=$2
 COLOR="\e[35m"
