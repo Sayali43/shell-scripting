@@ -14,6 +14,6 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+ PRIVATE_IP=$(aws ec2 run-instances --image-id $AMI_ID --instance-type t3.micro --security-group-ids $SGID --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=\"${COMPONENT}\"}]" | jq .Instances[].PrivateIpAddress |sed -e 's/"//g')
 
-aws ec2 run-instances --image-id $AMI_ID --instance-type t3.micro --security-group-ids $SGID --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=\"${COMPONENT}\"}]"
  
