@@ -14,5 +14,5 @@ if [ -z $1 ] || [ -z $2 ] ; then
     exit 1
 fi 
 
-aws ec2 run-instances --image-id $AMI_ID --instance-type t3.micro --security-group-ids $SGID --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]" 
+aws ec2 run-instances --image-id $AMI_ID --instance-type t3.micro --security-group-ids $SGID --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=\"${COMPONENT}\"}]"
  
