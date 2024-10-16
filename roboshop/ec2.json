@@ -5,20 +5,20 @@ cat ec2.json | jq .Instancesp[].PrivateIpAddress
     "Instances": [
         {
             "AmiLaunchIndex": 0,
-            "ImageId": "ami-072983368f2a6eab5",
-            "InstanceId": "i-03596922362189d2f",
+            "ImageId": "ami-0bee47ea953515411",
+            "InstanceId": "i-02ae9b5b4dd8335a2",
             "InstanceType": "t3.micro",
-            "LaunchTime": "2024-03-16T01:52:57+00:00",
+            "LaunchTime": "2024-10-16T06:19:42+00:00",
             "Monitoring": {
                 "State": "disabled"
             },
             "Placement": {
-                "AvailabilityZone": "us-east-1c",
+                "AvailabilityZone": "us-east-1d",
                 "GroupName": "",
                 "Tenancy": "default"
             },
-            "PrivateDnsName": "ip-172-31-4-40.ec2.internal",
-            "PrivateIpAddress": "172.31.4.40",
+            "PrivateDnsName": "ip-172-31-27-249.ec2.internal",
+            "PrivateIpAddress": "172.31.27.249",
             "ProductCodes": [],
             "PublicDnsName": "",
             "State": {
@@ -26,19 +26,19 @@ cat ec2.json | jq .Instancesp[].PrivateIpAddress
                 "Name": "pending"
             },
             "StateTransitionReason": "",
-            "SubnetId": "subnet-08c53c78664626d0f",
-            "VpcId": "vpc-0031cc952da0c7bfc",
+            "SubnetId": "subnet-06e2748d7f2ff1dee",
+            "VpcId": "vpc-0d32ea708f977ba13",
             "Architecture": "x86_64",
             "BlockDeviceMappings": [],
-            "ClientToken": "bb80fc7f-2e66-4bcd-9db4-2b7de67b5e57",
+            "ClientToken": "d928ff9c-fc97-41fb-9d3b-a0d9994b6ab6",
             "EbsOptimized": false,
             "EnaSupport": true,
             "Hypervisor": "xen",
             "NetworkInterfaces": [
                 {
                     "Attachment": {
-                        "AttachTime": "2024-03-16T01:52:57+00:00",
-                        "AttachmentId": "eni-attach-0456bbc5d358e7325",
+                        "AttachTime": "2024-10-16T06:19:42+00:00",
+                        "AttachmentId": "eni-attach-0aa34f526a1c31992",
                         "DeleteOnTermination": true,
                         "DeviceIndex": 0,
                         "Status": "attaching",
@@ -47,27 +47,27 @@ cat ec2.json | jq .Instancesp[].PrivateIpAddress
                     "Description": "",
                     "Groups": [
                         {
-                            "GroupName": "b57-allows-all",
-                            "GroupId": "sg-03b4d0f3339fdc89c"
+                            "GroupName": "b57-allowall",
+                            "GroupId": "sg-009ab1454a519d038"
                         }
                     ],
                     "Ipv6Addresses": [],
-                    "MacAddress": "02:ac:e6:58:76:49",
-                    "NetworkInterfaceId": "eni-0eedcaff2606b8978",
-                    "OwnerId": "355449129696",
-                    "PrivateDnsName": "ip-172-31-4-40.ec2.internal",
-                    "PrivateIpAddress": "172.31.4.40",
+                    "MacAddress": "0a:ff:e3:1d:15:37",
+                    "NetworkInterfaceId": "eni-0e36437e1334c0fe7",
+                    "OwnerId": "147997133315",
+                    "PrivateDnsName": "ip-172-31-27-249.ec2.internal",
+                    "PrivateIpAddress": "172.31.27.249",
                     "PrivateIpAddresses": [
                         {
                             "Primary": true,
-                            "PrivateDnsName": "ip-172-31-4-40.ec2.internal",
-                            "PrivateIpAddress": "172.31.4.40"
+                            "PrivateDnsName": "ip-172-31-27-249.ec2.internal",
+                            "PrivateIpAddress": "172.31.27.249"
                         }
                     ],
                     "SourceDestCheck": true,
                     "Status": "in-use",
-                    "SubnetId": "subnet-08c53c78664626d0f",
-                    "VpcId": "vpc-0031cc952da0c7bfc",
+                    "SubnetId": "subnet-06e2748d7f2ff1dee",
+                    "VpcId": "vpc-0d32ea708f977ba13",
                     "InterfaceType": "interface"
                 }
             ],
@@ -75,8 +75,8 @@ cat ec2.json | jq .Instancesp[].PrivateIpAddress
             "RootDeviceType": "ebs",
             "SecurityGroups": [
                 {
-                    "GroupName": "b57-allows-all",
-                    "GroupId": "sg-03b4d0f3339fdc89c"
+                    "GroupName": "b57-allowall",
+                    "GroupId": "sg-009ab1454a519d038"
                 }
             ],
             "SourceDestCheck": true,
@@ -87,7 +87,7 @@ cat ec2.json | jq .Instancesp[].PrivateIpAddress
             "Tags": [
                 {
                     "Key": "Name",
-                    "Value": "$COMPONENT"
+                    "Value": "my-instance-name"
                 }
             ],
             "VirtualizationType": "hvm",
@@ -120,6 +120,6 @@ cat ec2.json | jq .Instancesp[].PrivateIpAddress
             "CurrentInstanceBootMode": "legacy-bios"
         }
     ],
-    "OwnerId": "355449129696",
-    "ReservationId": "r-033aeb2fb8a8e62ac"
+    "OwnerId": "147997133315",
+    "ReservationId": "r-0bd4752e79cabbb0e"
 }
