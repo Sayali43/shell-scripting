@@ -8,7 +8,7 @@ HOSTEDZONE_ID="Z085783623DWXDG27CQ0U"     # User your private zone id
 COMPONENT=$1
 
 
-if [ -z $1 ] || [ -z $2 ] ; then
+if [ -z $1 ] then
     echo -e "\e[31m   COMPONENT ARE NEEDED: \e[0m"
     echo -e "\e[36m \t\t Example Usage : \e[0m  bash launch-ec2 dev ratings"
     exit 1
