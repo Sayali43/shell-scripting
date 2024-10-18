@@ -4,7 +4,7 @@
 
 AMI_ID="ami-0bee47ea953515411"
 SGID="sg-009ab1454a519d038"               # Create your own Security Group that allows allows all and then add your SGID 
-HOSTEDZONE_ID="Z085783623DWXDG27CQ0U"     # User your private zone id
+HOSTEDZONE_ID="Z055763515QS3B0HRIR6I"     # User your private zone id
 COMPONENT=$1
 ENV=$2
 COLOR="\e[35m"
